@@ -44,10 +44,15 @@ Categorization of Census blocks in the East Bay based on their mobility access
 <h2><span style="font-size:16pt;">Data Collection &amp; Wrangling</span></h2>
 <p><span style="font-size:11pt;">The following table describes all datasets used and their sources. It can be assumed that all data used was the most recent data provided by these sources.&nbsp;</span></p>
 
-![Data_Source_Table](https://github.com/gabehaddad/Mobility_Index/assets/105304214/785d6d30-645b-4f82-87ab-0d265050b513)
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/785d6d30-645b-4f82-87ab-0d265050b513" width="75%" />
+</p>
+
 
 Once we clipped the Census Blocks to the research area of interest, we removed any Blocks that contained only water and then found the centroid of each. All datasets were stored as GeoDataFrames with CRS set to World Geodetic System 1984 (EPSG 4326). 
 
+
+Figure 1: Map of BART stations, AC Transit stops, and Bay Wheels ports
 <p align="center">
   <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/7107797e-e320-4c11-8a62-b81d5304b305" title="East Bay Mobility Assets">
 </p>
@@ -59,6 +64,7 @@ Once we clipped the Census Blocks to the research area of interest, we removed a
 <h3><span style="color:#434343;font-size:13.999999999999998pt;">Network Length Variables</span></h3>
 <p><span style="font-size:11pt;">To score the walk and bike networks for a given Census Block, we calculated the ratio of walk and bike networks to the road network, respectively. We assume that higher ratios mean more options for active transportation routes relative to the driving network. For instance, a walk-to-drive ratio of 2.0 means that there are twice as many opportunities in an area to walk as opposed to drive.&nbsp;</span></p>
 
+Figure 2: Maps of Walk, Bike, and Drive networks
 <p float="left">
   <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/d399e349-06d0-4db4-90b2-f60ca7d7f10a" width="32%" />
   <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/99b1ecf4-180c-48cd-b88b-6032079c5a1f" width="32%" /> 
@@ -88,3 +94,55 @@ Our third and most important index combines all five mobility metrics and is wha
 <h2><span style="font-size:16pt;">LIHTC Comparison</span></h2>
 
 For the LIHTC properties, we plotted their locations as points on top of the combination score map to see where they are placed relative to overall mobility levels. We then calculated the average mobility score for all Blocks within the cities of Berkeley, Oakland, and Emeryville that contain LIHTC properties. We did this to evaluate how affordable housing mobility access compares across the three cities we analyzed as well as to the mobility levels across the full area of analysis. We found an average combination score for LIHTC locations in each city and compared them to the distribution of scores we calculated for the full East Bay region.
+
+<h1><span style="font-size:20pt;">Findings:</span></h1>
+<h2><span style="font-size:16pt;">Mobility Variables</span></h2>
+<p><span style="font-size:11pt;">The following section discusses descriptive findings and makes comparisons among routing and network length variables, respectively.&nbsp;</span></p>
+<h3><span style="color:#434343;font-size:13.999999999999998pt;">Routing Variables</span></h3>
+
+Figure 3: Choropleth maps of distance to closest BART station, bus stop, and BayWheels port
+
+<p float="left">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/56532c81-b61e-4ae4-89f5-a1f9b94880b7" width="32%" />
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/6a76a75f-d16f-4dad-b82f-f62b428e6326" width="32%" /> 
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/b0df216c-d862-4636-976f-f8700cc29029" width="32%" />
+</p>
+
+Our routing variables color code each Census Block based on how close the centroid is to the nearest mobility asset. Each map is color coded based on 10 quantiles with the dark purple representing the nearest distance to the transportation facility and yellow representing the farthest distance. Distribution and quantiles can be further explored in histograms, as seen in Figure XX. 
+
+Figure 4: Histograms of distance to closest BART station, bus stop, and BayWheels port
+
+<p float="left">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/ea869989-b72d-494b-9582-20250b330d1a" width="32%" />
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/677f0d0f-b572-4486-bda0-8cd065d38827" width="32%" /> 
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/cb35e027-7f08-4068-815d-fc498835b3ec" width="32%" />
+</p>
+
+Choropleth maps and histograms indicate widely varying spatial distributions for our three routing variables. The BART map shows clear purple clusters around each of the nine stations in our area of analysis, with gradually brighter colors radiating out from the station. The Bay Wheels map is more dispersed and shows how there are distinct areas and corridors that have good bike share coverage, particularly in the Northern and Western zones of the region. The Southern and Eastern zones have meaningfully less bike share coverage. The bus stop map is significantly more heterogeneous, which implies that the bus network has the widest coverage of the three modes. Proximate blocks have different colors while the rail and bikeshare maps have clear nodes and the colors are in a consistent gradient. This pattern is due to the higher number of stops. (Add more when we have histograms)
+
+<p><span style="color:#434343;font-size:13.999999999999998pt;">Network Length Variables</span></p>
+
+Figure 5: Choropleth maps of walk- and bike-to-drive network lengths
+
+<p float="left">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/7ba0e6e4-7132-4397-b530-7d442ddbf30b" width="49%" />
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/d1c709e4-c12f-41dd-8345-fbf0631d6dcb" width="49%" /> 
+</p>
+
+Figure 6: Histograms of walk-to-drive and bike-to-drive network ratios
+
+<p float="left">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/98238a6d-fb69-4aa2-a738-6b79264a3d3c" width="49%" />
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/f47e6e9e-f143-4fa8-a682-1876fc483533" width="49%" /> 
+</p>
+
+
+
+
+
+
+
+
+
+
+
