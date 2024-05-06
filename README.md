@@ -22,30 +22,18 @@ For our area of research interest, we chose to examine the East Bay, which we de
 We calculated and included the following variables in our index:
 
 <p><span style="font-size:11pt;">Routing Variables:</span></p>
-        <ul>
-            <li style="list-style-type:circle;font-size:11pt;">
-                <p><span style="font-size:11pt;">Distance to the closest BART station along the walking network</p>
-            </li>
-            <li style="list-style-type:circle;font-size:11pt;">
-                <p><span style="font-size:11pt;">Distance to the closest bus stop along the walking network</p>
-            </li>
-            <li style="list-style-type:circle;font-size:11pt;">
-                <p><span style="font-size:11pt;">Distance to the closest BayWheels &nbsp;bike share station</p>
-            </li>
-        </ul>
-    </li>
-<p><span style="font-size:11pt;">Network Length Variables:</span></p>
-        <ul>
-            <li style="list-style-type:circle;font-size:11pt;">
-                <p><span style="font-size:11pt;">Ratio of the length of the walk to road network</p>
-            </li>
-            <li style="list-style-type:circle;font-size:11pt;">
-                <p><span style="font-size:11pt;">Ratio of the length of the bike to road network</p>
-            </li>
-        </ul>
-    </li>
-</ul>
-<h2><span style="font-size:16pt;">Data Collection &amp; Wrangling</span></h2>
+<ul>
+  <li>Distance to the closest BART station along the walking network</li>
+  <li>Distance to the closest bus stop along the walking network</li>
+  <li>Distance to the closest BayWheels bike share station</li>
+</ul> 
+             
+Network Length Variables
+<ul>
+ <li>Ratio of the length of the walk to road network</li>
+ <li>Ratio of the length of the bike to road network</li>
+       
+<h2><span style="font-size:16pt;">Data Collection and Wrangling </span></h2>
 
 The following table describes all datasets used and their sources. It can be assumed that all data used was the most recent data provided by these sources.
 
