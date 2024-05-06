@@ -32,6 +32,7 @@ Network Length Variables
 <ul>
  <li>Ratio of the length of the walk to road network</li>
  <li>Ratio of the length of the bike to road network</li>
+</ul> 
        
 <h2><span style="font-size:16pt;">Data Collection and Wrangling </span></h2>
 
