@@ -1,6 +1,7 @@
 By Gabe Haddad and Breitling Snyder
 
-Categorization of Census blocks in the East Bay based on their mobility access using Python analytical and mapping tools.
+<h3><span style="color:#434343;font-size:13.999999999999998pt;">Categorization of Census blocks in the East Bay based on their mobility access using Python analytical and mapping tools.</span></h3>
+
 
 
 <h1><span style="font-size:20pt;">Introduction:</span></h1>
@@ -22,14 +23,14 @@ For our area of research interest, we chose to examine the East Bay, which we de
 
 We calculated and included the following variables in our index:
 
-<p><span style="font-size:11pt;">Routing Variables:</span></p>
+Routing Variables:
 <ul>
   <li>Distance to the closest BART station along the walking network</li>
   <li>Distance to the closest bus stop along the walking network</li>
   <li>Distance to the closest BayWheels bike share station</li>
 </ul> 
              
-Network Length Variables
+Network Length Variables:
 <ul>
  <li>Ratio of the length of the walk to road network</li>
  <li>Ratio of the length of the bike to road network</li>
@@ -233,11 +234,12 @@ We found that across all three cities, the average mobility score for blocks wit
 
 Our analysis demonstrated that overall access to mobility across the East Bay is strong, but there is clear spatial inequality across different sections. While the average scores for Census Blocks is high, our maps show that there are areas with small, dense Census Blocks (that suggests high population density) where access to transportation options are limited. This is most visible in Southern and Eastern Oakland, which is likely the reason why Oakland’s average score for LIHTC locations is lower than in Berkeley and Emeryville. 
 
-We also noticed that Berkeley has very high mobility scores in nearly the entire city and especially near the UC campus. The campus is a commute hub for its 28,000 employees and 45,000 students who live throughout the East Bay. Numerous AC Transit lines converge at the campus and pass through neighboring parts of the city. The corridor from Downtown Oakland to the campus is notably accessible due to the BART route, higher concentration of bike share ports, and AC transit route patterns mentioned above. The distribution of distance to bus stops was the most concentrated of the three modes of transit. Our histogram suggests that nearly all Blocks in the East Bay are within 500 meters of a bus stop. With a greater concentration of bus stops between Downtown Oakland and UC Berkeley compared to other parts of the East Bay, it makes sense that this is the most accessible section based on our mobility index. 
+We also noticed that Berkeley has very high mobility scores in nearly the entire city and especially near the UC campus. The campus is a commute hub for its 28,000 employees and 45,000 students who live throughout the East Bay. Numerous AC Transit lines converge at the campus and pass through neighboring parts of the city. The corridor from Downtown Oakland to the campus is notably accessible due to the BART route, higher concentration of bike share ports, and AC transit route patterns mentioned above. The distribution of distance to bus stops was the most concentrated of the three modes of transit. Our histogram suggests that most Blocks in the East Bay are within 500 meters of a bus stop. With a greater concentration of bus stops between Downtown Oakland and UC Berkeley compared to other parts of the East Bay, it makes sense that this is the most accessible section based on our mobility index. 
 
-In evaluating the transportation network of the East Bay, our descriptive findings suggest that the network is well designed and has provided strong access on average. Closer analysis of our maps shows that there are certain areas that are lacking. Future transportation planning should take this into consideration and prioritize increasing access in Southeast Oakland before adding improvements to the sections with already high access levels. This extends beyond transit service to active transportation networks. Our map showing only network density scores has a similar pattern to the transportation only map which indicates that Southeast Oakland is also less walkable and bikeable than other parts of the East Bay. Laying the groundwork for walkable communities helps neighborhoods grow and thrive. 
+In evaluating the transportation network of the East Bay, our descriptive findings suggest that the network is well designed and has provided strong access on average. Closer analysis of our maps shows that there are certain areas that are lacking. Future transportation planning should take this into consideration and prioritize increasing access in the denser areas of East Oakland before adding improvements to the sections with already high access levels. This extends beyond transit service to active transportation networks. Our map showing only network density scores has a similar pattern to the transportation only map which indicates that East Oakland is also less walkable and bikeable than other parts of the East Bay. Laying the groundwork for accessible communities helps neighborhoods grow and thrive. 
 
 For LIHTC property locations, there is a similar implication. While the average scores for property Blocks across all three cities were quite high, there are clusters of properties that are in relatively inaccessible areas. Our map of property points shows how East Oakland affordable housing locations are in meaningfully less accessible Blocks. The majority of properties being in high-access Blocks raises the average but obscures the issue of low scored blocks with LIHTC properties which are visible in the map. New affordable housing should be placed in Blocks with as high a score as possible, and steps should be taken to increase mobility in areas with dense populations but low access to transportation options.
+
 
 
 <h2><span style="font-size:16pt;">Limitations and Next Steps</span></h2>
