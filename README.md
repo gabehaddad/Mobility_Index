@@ -1,4 +1,6 @@
-By Gabe Haddad and Breitling Snyder
+By Gabe Haddad and Breitling Snyder<br>
+CYPLAN255<br>
+Spring 2024
 
 <h3><span style="color:#434343;font-size:13.999999999999998pt;">Categorization of Census blocks in the East Bay based on their mobility access using Python analytical and mapping tools.</span></h3>
 
