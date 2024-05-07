@@ -105,7 +105,7 @@ Figure 3: Choropleth maps of distance to closest BART station, bus stop, and Bay
   <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/b0df216c-d862-4636-976f-f8700cc29029" width="32%" />
 </p>
 
-Our routing variables color code each Census Block based on how close the centroid is to the nearest mobility asset. Each map is color coded based on 10 quantiles with the dark purple representing the nearest distance to the transportation facility and yellow representing the farthest distance. Distribution and quantiles can be further explored in histograms, as seen in Figure XX. 
+Our routing variables color code each Census Block based on how close the centroid is to the nearest mobility asset. Each map is color coded based on 10 quantiles with the dark purple representing the nearest distance to the transportation facility and yellow representing the farthest distance. Distribution and quantiles can be further explored in histograms, as seen in Figure 4. 
 
 Figure 4: Histograms of distance to closest BART station, bus stop, and BayWheels port
 
@@ -117,7 +117,9 @@ Figure 4: Histograms of distance to closest BART station, bus stop, and BayWheel
 
 Choropleth maps and histograms indicate widely varying spatial distributions for our three routing variables. The BART map shows clear purple clusters around each of the nine stations in our area of analysis, with gradually brighter colors radiating out from the station. The Bay Wheels map is more dispersed and shows how there are distinct areas and corridors that have good bike share coverage, particularly in the Northern and Western zones of the region. The Southern and Eastern zones have meaningfully less bike share coverage. The bus stop map is significantly more heterogeneous, which implies that the bus network has the widest coverage of the three modes. Proximate blocks have different colors while the rail and bikeshare maps have clear nodes and the colors are in a consistent gradient. This pattern is due to the higher number of stops. (Add more when we have histograms)
 
-<p><span style="color:#434343;font-size:13.999999999999998pt;">Network Length Variables</span></p>
+
+
+<h3><span style="color:#434343;font-size:13.999999999999998pt;">Network Length Variables</span></h3>
 
 Figure 5: Choropleth maps of walk- and bike-to-drive network lengths
 
@@ -134,9 +136,64 @@ Figure 6: Histograms of walk-to-drive and bike-to-drive network ratios
 </p>
 
 
+<h2><span style="font-size:16pt;">Mobility Index</span></h2>
 
 
+<h3><span style="color:#434343;font-size:13.999999999999998pt;">Routing Only</span></h3>
 
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/6fcd5e7f-fbaa-4bc8-b794-3d01e1d651e6" width="75%" />
+</p>
+
+The above histogram shows the distribution of transit-oriented scores. Scores are within the range of 1 to 15. The vast majority of scores are 11 or higher which suggests that the East Bay has strong access to transportation. Few Blocks have scores below 9.
+
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/d7d00a8d-11d7-4170-8cd3-aec7f87653aa" width="75%" />
+</p>
+
+The above map shows the Census Blocks colored by their transit index score. Purple indicates the least access to BART, bus, and bike share and yellow indicates the most. There are clear clusters of yellow around the BART stations which are accentuated by the high number of bus stops that serve as connections to the rail network. One disconnect between the histogram and the map is that there is a higher number of small Census Blocks that are clustered around the main transportation corridors. The high percentage of total blocks having high scores in the histogram is not reflected in the map that shows a comparatively lower percentage of land area having high scores. 
+
+
+<h3><span style="color:#434343;font-size:13.999999999999998pt;">Network Ratios Only</span></h3>
+
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/a9e27dba-4ecf-4b10-8cad-b6aceb699ea1" width="75%" />
+</p>
+
+The above histogram shows the score distribution for the network density oriented index. It shows the spread of Census Blocks with scores weighted to highlight the walking and biking network density relative to the driving network density. In contrast to the transit oriented score, the chart indicates that most Blocks have a score between 2 and 5 out of 10. A high-level takeaway from this difference is that the East Bay has a stronger transit network than it does active transportation infrastructure.
+
+
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/e8c267b0-ea6d-4a36-bae3-96a4430d517a" width="75%" />
+</p>
+
+The above map shows the spectrum of walk and bike network density scores represented spatially. Each Block is color coded by score with purple representing low and yellow representing high scores. Compared to the transit figures, the histogram and map are more in sync. In terms of spatial distribution, there are visible segments of the East Bay that have far denser active transportation networks. Berkeley and North Oakland have a noticeable higher index score than the rest of the region. There is also a highly scored corridor starting at Lake Merritt and following the waterfront toward Fruitvale and Oakland Coliseum. The Eastern segment of the area has visibly lower scores, which is likely due to the steep hills and lower density land use where sidewalks and bike lanes are less common.
+
+
+<h3><span style="color:#434343;font-size:13.999999999999998pt;">Combination Score</span></h3>
+
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/fa647b78-8b5b-4a8d-921b-dd4893666416" width="75%" />
+</p>
+
+The above histogram shows the spread of scores for our most important index, which incorporates all five transportation metrics. The histogram is more closely aligned with the transit oriented index because these metrics overall are given more weight than the walk and bike networks due to their greater ability to move people throughout the region. Our index indicates that East Bay has a fairly high level of mobility access. The majority of Blocks have scores between 10 and 13 out of a maximum of 15. There are outlier Blocks, but most have combined mobility levels in the top third of possible scores.
+
+
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/b4dd5636-f2fe-4df0-b2ba-902eb5ce662b" width="75%" />
+</p>
+
+Our combined score map indicates that the highest score Blocks are in line with the BART corridor in the area of analysis that starts in North Berkeley and moves South to Oakland Coliseum. The pockets of yellow are concentrated around these stations. This is because BART was given the highest weight in the index due to its ability to travel to more of the Bay Area than bus or train. The pink and lighter purple blocks indicate greater distance to rail but strong access to bus and bike share, and may also indicate a high presence of bike lanes. The yellow pockets are also bolstered by good bus connectivity to the BART network. The darker purple areas are larger, less populated blocks and includes parks and other areas that transit cannot serve. This explains why the overall percentage of high-score land area is lower than the percent of Blocks with high scores seen in the histogram.
+
+
+<h2><span style="font-size:16pt;">Comparison to LIHTC Properties</span></h2>
+
+<p align="center">
+  <img src="https://github.com/gabehaddad/Mobility_Index/assets/105304214/3e8a574b-cd16-4990-ba38-d33192119519" width="75%" />
+</p>
+
+
+The above map shows the location of LIHTC properties overlaid on the combination score map. The affordable housing points appear to be situated primarily in blocks with high mobility scores. There is a large cluster of properties near Downtown Oakland and Lake Merritt and a high number of properties dispersed throughout Berkeley and North Oakland where mobility scores are high. There are a few properties in South Oakland that are in low score Blocks, but the map suggests that LIHTC properties are overall located in areas with good mobility access, which is an indication that their residents are well situated to access jobs, services, amenities, and other points of interest throughout the Bay Area. 
 
 
 
